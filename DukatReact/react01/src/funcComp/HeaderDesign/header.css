@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    background-color: beige;
+}
+
+Header{
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: aqua;
+}
+
+nav{
+    background-color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul li a:hover{
+    color: brown;
+   
+}
