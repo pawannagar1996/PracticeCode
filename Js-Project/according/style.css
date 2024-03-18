@@ -1,0 +1,16 @@
+/* Global setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+   scroll-behavior: smooth;
+   transition: all 0.5s;
+}
+:root{
+    --whiteColor:#fff;
+    --blackColor:#000000;
+    --primaryColor:green;
+}

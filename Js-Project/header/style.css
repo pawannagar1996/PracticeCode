@@ -1,0 +1,175 @@
+/* Global setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+   scroll-behavior: smooth;
+   transition: all 0.5s;
+}
+:root{
+    --whiteColor:#fff;
+    --blackColor:#000000;
+    --primaryColor:green;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{text-decoration: none;
+    display: inline-block;
+}
+
+button{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 18rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+h1{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h2{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h3{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h4{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h5{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h6{
+    color:var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p{
+    color:var(--blackColor);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6; 
+}
+.layout{
+    width: 100%;
+    max-width: 128rem;
+    margin: auto;
+}
+
+/* header */
+main{
+    width: 100%;
+    padding: 0rem 4rem;
+}
+.header{
+    background-color: aqua;
+}
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0rem;
+}
+
+.logo{
+    font-size: 3rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+ font-size: 1.8rem;
+ padding: 1rem 2rem;
+ background-color: var(--whiteColor);
+ color: var(--blackColor);
+ border-radius: 0.5rem;
+}
+
+nav ul li a:hover{
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+   }
+
+   #menu-btn{
+    display: none; 
+    transition: all 0.5s;
+   }
+
+   .section1{
+    background-color: blue;
+    height: 100vh;
+   }
+   .section2{
+    background-color: rgb(0, 255, 55);
+    height: 100vh;
+   }
+
+   .go-top{
+    font-size: 3rem;
+    color:#f44949;
+    position: fixed;
+    right:40px;
+    bottom:40px;
+  display: none;
+    cursor: pointer;
+    transition: all 0.5s;
+   }
+
+   .active{
+    display: block;
+   }
+
+   @media only screen and (max-width: 980px) {
+    body {
+      background-color: lightblue;
+    }
+
+   nav{width: 100%;
+    height: calc(100vh - 6.5rem);
+    position: fixed;
+    top:65px;
+    left: -100%;
+    background-color: blanchedalmond;
+    transition: all 0.5s;
+   }
+ 
+   nav ul{
+    width: 100%;
+    height: calc(100vh - 6.5rem);
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+    #menu-btn{
+        display: block;
+        font-size: 2rem;
+       }
+  }

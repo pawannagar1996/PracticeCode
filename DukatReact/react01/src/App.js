@@ -1,19 +1,13 @@
-import './App.css';
-import HeaderFun from './funcComp/HeaderDesign/HeaderFun';
-
-
-
+import "./App.css"
+import CreateRefClass from "./components/CreateRecClass/CreateRefClass";
 
 
 
 function App() {
 
-  
-
-  return (
-    <div className="App">
-    <HeaderFun />
-    </div>
+  return (<>
+<CreateRefClass />
+</>
   );
 }
 

@@ -1,0 +1,9 @@
+.banner{
+    width:100%;
+    max-width: 128rem;
+    height:calc(100vh - 7.7rem);
+    margin: auto;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+    padding: 1.5rem 3rem;
+}

@@ -1,0 +1,16 @@
+.ThreeSection{
+    width:100%;
+    max-width: 128rem;
+    height:calc(100vh - 7.7rem);
+    margin: auto;
+    background-color: bisque;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ThreeSection h1{
+
+    font-size: 4.5rem;
+}

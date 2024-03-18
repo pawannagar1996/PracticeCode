@@ -1,0 +1,118 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+
+    box-sizing: border-box;
+}
+
+main{
+
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+
+    
+
+
+    
+}
+
+
+.wrapper{background-color: black;}
+
+
+
+#slider{
+
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#slider figure{
+position: relative;
+
+width:400%;
+left: 0%;
+
+animation: animate 15s infinite;
+
+
+
+}
+
+#slider figure img{
+
+    vertical-align: middle;
+    width:25%;
+    height: 100vh;
+    float: left;
+}
+
+@keyframes animate{
+
+ 
+0%{left:0%;}
+25%{left:0%;}
+
+25%{left:-100%;}
+50%{left:-100%;}
+
+50%{left:-200%;}
+75%{left:-200%;}
+
+75%{left:-300%;}
+100%{left:-300%;}
+
+
+  
+
+    
+}
+
+
+/* ======================  slider2 ==================================== */
+
+
+.slider2{
+width: 100%;height: 100vh;
+background-image: url(img/s2.1.jpg);
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    
+
+
+transition:5s;
+
+animation-name: animate-2;
+animation-direction:alternate-reverse;
+animation-play-state: running;
+animation-duration: 15s;
+
+animation-iteration-count: infinite;
+
+
+
+
+
+}
+
+@keyframes animate-2 {
+
+
+    0%{background-image: url(img/s2.2.jpg);}
+
+    33%{background-image: url(img/s2.3.jpg);}
+
+    66%{background-image: url(img/s2.4.jpg);}
+
+  100%{background-image: url(img/s2.1.jpg);}
+    
+}
+
+
+/* ======================  slider3 ==================================== */
+
+
