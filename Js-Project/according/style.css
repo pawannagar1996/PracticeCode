@@ -14,3 +14,33 @@ html{
     --blackColor:#000000;
     --primaryColor:green;
 }
+
+h1{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.layout{
+    width: 100%;
+    max-width:118rem;
+    margin:auto;
+}
+
+.accordian-item{
+    background-color: rgb(164, 201, 234);
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+.accordian-context{
+    display: none;
+}
+
+.accordian-item.active .accordian-context{
+    display: block;
+}
+
