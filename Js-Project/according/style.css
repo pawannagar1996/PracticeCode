@@ -1,46 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Global setting */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
-   scroll-behavior: smooth;
-   transition: all 0.5s;
-}
-:root{
-    --whiteColor:#fff;
-    --blackColor:#000000;
-    --primaryColor:green;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+    font-family: "Rambla", sans-serif;
 }
 
-h1{
+:root {
+    --whiteColor: #fff;
+    --blackColor: #000000;
+    --primaryColor: green;
+}
+
+h1 {
     font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.layout {
+    width: 100%;
+    height: 100vh;
+    max-height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(248, 242, 191), rgb(0, 34, 99));
+    padding: 0 2rem;
+}
+
+.accordian-item {
+    width: 100%;
+    max-width: 70rem;
+    background-color: #f8f2bf;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
-p{
-    font-size: 1.6rem;
+.accordian-title h1 {
+    color: #00113a;
+}
+
+.accordian-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordian-title i {
+    font-size: 1.8rem;
+}
+
+.accordian-context p {
+    font-size: 1.8rem;
     margin-top: 1rem;
 }
 
-.layout{
+.accordian-context {
+    max-height: 0rem;
+    overflow: hidden;
+    color: #101010;
+    transition: all 0.5s ease;
+}
+
+.accordian-item.active .accordian-context {
+    max-height: 30rem;
+}
+
+.accordian-title .icon {
+    transition: all 0.5s ease-in;
+}
+
+.accordian-item.active .icon {
+    /* transform: rotateY(180deg); */
+    transform: rotateX(180deg);
+}
+
+.active{
+    position:relative;
+}
+.active::after{
+    position: absolute;
+    content: "";
     width: 100%;
-    max-width:118rem;
-    margin:auto;
+    top: 0;
+    left: 0;
+    border-top: 3px solid 	#00113a;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    animation: box-silid 1s linear;
 }
 
-.accordian-item{
-    background-color: rgb(164, 201, 234);
-    padding: 3rem;
-    margin-bottom: 1rem;
-}
-.accordian-context{
-    display: none;
-}
 
-.accordian-item.active .accordian-context{
-    display: block;
-}
+@keyframes box-silid {
 
+    0%{width:0%}
+    100%{width: 100%;}
+    
+}
