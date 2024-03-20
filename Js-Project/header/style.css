@@ -1,29 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Global setting */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
-   scroll-behavior: smooth;
-   transition: all 0.5s;
-}
-:root{
-    --whiteColor:#fff;
-    --blackColor:#000000;
-    --primaryColor:green;
+    font-family: "Rambla", sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
 }
 
-ul li{
+:root {
+    --whiteColor: #fff;
+    --blackColor: #000000;
+    --primaryColor: green;
+}
+
+ul li {
     list-style-type: none;
 }
 
-a{text-decoration: none;
+a {
+    text-decoration: none;
     display: inline-block;
 }
 
-button{
+button {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     font-size: 18rem;
@@ -31,145 +37,168 @@ button{
     display: inline-block;
 }
 
-h1{
-    color:var(--blackColor);
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-h2{
-    color:var(--blackColor);
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-h3{
-    color:var(--blackColor);
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-h4{
-    color:var(--blackColor);
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-h5{
-    color:var(--blackColor);
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-h6{
-    color:var(--blackColor);
+h1 {
+    color: var(--blackColor);
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-p{
-    color:var(--blackColor);
+h2 {
+    color: var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    color: var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h4 {
+    color: var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h5 {
+    color: var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h6 {
+    color: var(--blackColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    color: var(--blackColor);
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.6; 
+    line-height: 1.6;
 }
-.layout{
+
+.layout {
     width: 100%;
     max-width: 128rem;
     margin: auto;
 }
 
 /* header */
-main{
+main {
     width: 100%;
     padding: 0rem 4rem;
 }
-.header{
-    background-color: aqua;
+
+.header {
+    transition: all 0.6s;
 }
-header{
-    background-color: aqua;
+
+header {
+    background-color: #627254;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 2rem;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 30px;
 }
 
-nav ul li a{
- font-size: 1.8rem;
- padding: 1rem 2rem;
- background-color: var(--whiteColor);
- color: var(--blackColor);
- border-radius: 0.5rem;
+nav ul li a {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    background-color: var(--whiteColor);
+    color: #76885B;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
 }
 
-nav ul li a:hover{
-    background-color: var(--blackColor);
+nav ul li a:hover {
+    background-color: #76885B;
     color: var(--whiteColor);
-   }
+}
 
-   #menu-btn{
-    display: none; 
+#menu-btn {
+    display: none;
     transition: all 0.5s;
-   }
+}
 
-   .section1{
-    background-color: blue;
+.section1 {
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-   }
-   .section2{
-    background-color: rgb(0, 255, 55);
-    height: 100vh;
-   }
+}
 
-   .go-top{
+.section2 {
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+.go-top {
     font-size: 3rem;
-    color:#f44949;
+    color: #627254;
     position: fixed;
-    right:40px;
-    bottom:40px;
-  display: none;
+    right: 40px;
+    bottom: 40px;
+    display: none;
     cursor: pointer;
-    transition: all 0.5s;
-   }
+}
 
-   .active{
+.active {
     display: block;
-   }
+}
 
-   @media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
     body {
-      background-color: lightblue;
+        background-color: lightblue;
     }
 
-   nav{width: 100%;
-    height: calc(100vh - 6.5rem);
-    position: fixed;
-    top:65px;
-    left: -100%;
-    background-color: blanchedalmond;
-    transition: all 0.5s;
-   }
- 
-   nav ul{
-    width: 100%;
-    height: calc(100vh - 6.5rem);
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-    #menu-btn{
+    .header {
+        position: fixed;
+    }
+
+    nav {
+        width: 100%;
+        height: calc(100vh - 6.5rem);
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        background-color: #DDDDDD;
+        transition: all 0.5s;
+    }
+
+    nav ul {
+        width: 100%;
+        height: calc(100vh - 6.5rem);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        width: 12rem;
+        text-align: center;
+    }
+
+    #menu-btn {
         display: block;
         font-size: 2rem;
-       }
-  }
+    }
+}
