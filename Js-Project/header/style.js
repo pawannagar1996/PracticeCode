@@ -21,11 +21,16 @@ menuShow.style.left="0";
  })
 // stickt header
  let header = document.querySelector(".header")
+ let subHeader = document.querySelector("header")
  window.addEventListener("scroll",()=>{
     if(window.scrollY > 100){
         header.style.position = "fixed" ;
-    }else{
+        header.style.backgroundColor= "#627254";
+    }
+ else{
         header.style.position = "relative"
+        header.style.backgroundColor= "transparent";
        
      }
  })
+
