@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color :#e94a47;
+    --secondary-color:#428dfc;
+    --primaryDark:#c53433;
+    --secondaryDark:#1e2362;
+    --white : #ffffff;
+    --text-font : #101010;
+    --heading:#111111;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+    font-family: "Rambla", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--heading);
+}
+h2 {
+    color: var(--heading);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--text-font);
+}
+
+body{
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(var(--primary-color) 50%,var(--primaryDark) 50%);
+    padding:40px;
+
+}
+
+main{
+    width: 100%;
+    max-width: 118rem;
+    margin: auto;
+    display: flex;
+    border-radius: 1rem;
+}
+.firstDiv{
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 5rem;
+}
+.firstDiv h2{
+    font-size: 3rem;
+}
+.firstDiv p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.firstDiv button{
+    border: 0px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ align-content: center;
+ cursor: pointer;
+ margin-top: 2rem;
+ border-radius: 0.3rem;
+ }
+ .firstDiv button .buttonDesign1{
+width: 7%;
+display: inline-block;
+background-color: var(--white);
+display: flex;
+justify-content: center;
+align-content: center;
+border-radius: 0.3rem;
+border: 0.1rem solid var(--secondary-color);
+
+ }
+ .firstDiv button .buttonDesign2{
+    width: 93%;
+    display: inline-block;
+    align-self: center;
+    color: var(--white);
+  
+    
+     }
+.firstDiv button img{
+width: 100%;
+}
+.firstDiv .paraAftBfr{
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 2rem;
+ 
+}
+.paraAftBfr::after{
+content: "";
+display: inline-block;
+width:calc(50% - 20px);
+height: 0.1rem;
+background-color: #111111;
+align-self: center;
+
+
+}
+.paraAftBfr::before{
+    content: "";
+    display: inline-block;
+    width:calc(50% - 20px);
+    height: 0.1rem;
+    background-color: #111111;
+    align-self: center;
+  
+    }
+.secondDiv{width: 50%;
+    background-color: #eff5ff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.secondDiv img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+@media only screen and (max-width: 992px){
+
+    .firstDiv button .buttonDesign1{
+        width: 10%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 90%;
+           
+             }
+    
+}
+
+@media only screen and (max-width: 768px){
+
+    .firstDiv button .buttonDesign1{
+        width: 15%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 85%;
+           
+             }
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    /* .firstDiv button .buttonDesign1{
+        width: 15%;
+        
+         }
+         .firstDiv button .buttonDesign2{
+            width: 85%;
+           
+             } */
+             body{
+        
+               height: 100%;}
+
+             main{
+               flex-direction: column;
+            }
+
+             .firstDiv{
+                width: 100%;
+                border-top-left-radius: 0rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                order: 2;
+            }
+            .secondDiv{width: 100%;
+                order: 1;
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 0rem;
+            }
+    
+}
