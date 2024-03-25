@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -12,15 +12,16 @@
     --primaryDark:#c53433;
     --secondaryDark:#1e2362;
     --white : #ffffff;
-    --text-font : #101010;
-    --heading:#111111;
+    --text-font : #5b5b5b;
+    --heading:#3d3d3d;
+    --border-form:#e1e1e1;
 }
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     transition: all 0.5s;
-    font-family: "Rambla", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -90,6 +91,8 @@ justify-content: center;
 align-content: center;
 border-radius: 0.3rem;
 border: 0.1rem solid var(--secondary-color);
+align-self: center;
+
 
  }
  .firstDiv button .buttonDesign2{
@@ -97,11 +100,13 @@ border: 0.1rem solid var(--secondary-color);
     display: inline-block;
     align-self: center;
     color: var(--white);
+    
   
     
      }
 .firstDiv button img{
 width: 100%;
+border-radius: 0.3rem;
 }
 .firstDiv .paraAftBfr{
     padding: 0px;
@@ -135,7 +140,97 @@ align-self: center;
     align-self: center;
   
     }
-.secondDiv{width: 50%;
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+form label{
+    font-size: 1.4rem;
+    color: var(--text-font);
+    font-weight: 600;
+}
+form label:nth-last-of-type(2){
+  margin-top: 2rem;
+}
+form label:nth-last-of-type(1){
+    margin-top: 2rem;
+  }
+form input{
+    font-size: 1.4rem;
+    color: var(--text-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: var(--border-form) solid 0.1rem; 
+    margin-top: 1rem;
+}
+form input::placeholder{
+    font-size: 1.4rem;
+    color: var(--border-form);
+}
+form input:focus{
+    outline: none;
+    border:1rem solid var(--secondary-color);  
+    
+   
+}
+
+form .checkbox {
+    display: flex;
+    margin-top: 2rem;
+    
+}
+form .checkbox input{
+   align-self:flex-start;
+   margin-right:1rem;
+   margin-top: 0.5rem;
+}
+form .checkbox p{
+    margin-top: 0rem;
+ }
+
+ form .submit{ height: auto;
+    display: flex;
+
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+   
+ }
+
+ form .submit input[type=submit]{
+    margin-top: 0rem;
+    background-color: var(--secondaryDark);
+    color: var(--white);
+    border-radius: 1rem;
+    border:0px;
+    padding: 1rem 7rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2rem;
+    align-self: center;
+    transition: all 0.5s;
+ }
+ form .submit input[type=submit]:hover{
+    background-color: var(--secondary-color);
+ }
+ form .submit p{
+
+    margin-top: 0rem;
+    align-self: center;
+ }
+ form .submit p a{ 
+
+   color: var(--secondary-color);
+   text-decoration: none;
+ }
+
+
+ .secondDiv{width: 50%;
     background-color: #eff5ff;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -144,8 +239,11 @@ align-self: center;
     justify-content: center;
     align-content: center;
 }
+
+
 .secondDiv img{
     width: 100%;
+    height: auto;
     border-radius: 1rem;
 }
 
@@ -159,6 +257,22 @@ align-self: center;
          .firstDiv button .buttonDesign2{
             width: 90%;
            
+             }
+
+             form .submit{ 
+                flex-direction: column;
+                align-content:start;
+               
+             }
+            
+             form .submit input[type=submit]{
+                align-self:start;
+               
+             }
+             form .submit p{
+            
+                margin-top: 2rem;
+                align-self:start;
              }
     
 }
@@ -206,6 +320,21 @@ align-self: center;
                 border-top-right-radius: 1rem;
                 border-top-left-radius: 1rem;
                 border-bottom-right-radius: 0rem;
+            }
+    
+}
+
+@media only screen and (max-width: 380px){
+
+
+
+             
+
+             .firstDiv{
+                padding: 3rem;
+            }
+            .secondDiv{width: 100%;
+                padding: 3rem;
             }
     
 }
