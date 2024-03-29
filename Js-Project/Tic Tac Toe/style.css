@@ -36,30 +36,34 @@ h2{
     font-size: 3rem;
     color: var(--fontColor);
 }
+h3{
+    font-size: 2rem;
+    color: var(--fontColor);
+}
 
 
 .container{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .game{
-    width: 60vmin;
-    height: 60vmin;
+    width: 50vmin;
+    height: 50vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5vmin;
+    gap: 2vmin;
 }
 
 .box{
     font-size: 8vmin;
     color: var(--xoFontColor);
-    width: 18vmin;
-    height: 18vmin;
+    width: 15vmin;
+    height: 15vmin;
     border-radius: 2rem;
     border: 0;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
