@@ -1,12 +1,12 @@
 import "./App.css"
-import CreateRefClass from "./components/CreateRecClass/CreateRefClass";
+import MemoParent from "./funcComp/Memo.js/MemoParent";
 
 
 
 function App() {
 
   return (<>
-<CreateRefClass />
+<MemoParent />
 </>
   );
 }
