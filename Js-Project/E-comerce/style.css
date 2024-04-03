@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white : #ffffff;
+    --black : #000000;
+    --primary : #ff905a;
+    --font-color-primary : #282c3f;
+    --font-color-secondary : #535777;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Rambla", sans-serif;
+    line-height: 1.6rem;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.2rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+}
+button{
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+   
+}
+a{
+    text-decoration: none;
+   
+}
+img{
+    width: 100%;
+    height: auto;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 197, 131);
+}
+.items-container{
+    width: 80%;
+    margin: auto;
+    margin: 0rem 10%;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:6%
+}
+.item-container{
+    width: 20%;
+    margin-top: 4rem;
+
+}
+.item-img{
+    width: 100%;
+}
+.rating{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.rating i{
+   color: #b0ab4c;
+}
+.company-name{
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: var(--font-color-primary);
+}
+.item-name{
+    font-size: 1.4rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--font-color-secondary);
+    text-transform: capitalize;
+}
+.pricing{
+    white-space: nowrap;
+    color: var(--font-color-primary);
+    margin-top: 1.5rem;
+}
+.pricing .current-price{
+    font-size: 1.4rem;
+    color: var(--font-color-primary);
+    font-weight: 700;
+   
+}
+.pricing .orignal-price{
+    font-size: 1.2rem;
+    color: var(--font-color-secondary);
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+.pricing .discount{
+    font-size: 1.2rem;
+    color: var(--font-color-secondary);
+    color: var(--primary);
+    margin-left: 0.5rem;
+}
+.Btn-add-bag{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.bag span{
+    font-size: 3rem;
+    background-color: #ff905a;
+    margin: 2rem;
+    padding: 1rem;
+    display: inline-block;
+}
