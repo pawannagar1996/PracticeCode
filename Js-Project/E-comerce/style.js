@@ -1,10 +1,28 @@
-displatItenOnPage()
-
 let mainBag = [];
+
+onLoad()
+
+function onLoad(){
+    displatItenOnPage()
+    displayBagIconCount() 
+}
 
 function btnAddToBag(itemId){
     mainBag.push(itemId)
-    console.log(mainBag)
+    localStorage.setItem("items",JSON.stringify(mainBag))
+    displayBagIconCount()
+  
+}
+
+function displayBagIconCount(){
+    let bagItemCountElem = document.querySelector(".bag-item-count")
+    if(mainBag.length > 0){
+     bagItemCountElem.innerHTML = mainBag.length;
+     bagItemCountElem.style.visibility = "visible"
+    }else{
+     bagItemCountElem.style.visibility = "hidden"
+    }
+ 
 }
 
 function displatItenOnPage(){

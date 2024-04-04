@@ -10,7 +10,7 @@
     --black : #000000;
     --primary : #ff905a;
     --font-color-primary : #282c3f;
-    --font-color-secondary : #535777;
+    --font-color-secondary : rgb(83, 87, 119);
 }
 
 html{
@@ -41,6 +41,35 @@ a{
 img{
     width: 100%;
     height: auto;
+}
+
+header{
+    background-color: #ff905a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+
+}
+.bag{display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+}
+.bag-item-count{ display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: rgba(83, 87, 119,0.8);;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    top: -2.8rem;
+    right:-3.8rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--white);
+   
 }
 main{
     width: 100%;
@@ -119,10 +148,4 @@ main{
     border-radius: 1rem;
 }
 
-.bag span{
-    font-size: 3rem;
-    background-color: #ff905a;
-    margin: 2rem;
-    padding: 1rem;
-    display: inline-block;
-}
+
