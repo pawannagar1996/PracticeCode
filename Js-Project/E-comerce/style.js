@@ -1,10 +1,12 @@
-let mainBag = [];
+let mainBag
 
 onLoad()
 
 function onLoad(){
-    displatItenOnPage()
-    displayBagIconCount() 
+    let mainBagStr = localStorage.getItem("items");
+    mainBag = mainBagStr ? JSON.parse(mainBagStr) : [];
+    displatItenOnPage();
+    displayBagIconCount() ;
 }
 
 function btnAddToBag(itemId){
