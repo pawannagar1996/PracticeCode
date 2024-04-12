@@ -64,6 +64,8 @@ function displatItenOnPage(){
 
 
 
-
+function displatItenOnPa(){
+    let itemsContainer = document.querySelector(".items-container");
+    let innerHtml = "";}
 
         
