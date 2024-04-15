@@ -1,15 +1,49 @@
 
-.add-to-bag-container{
+.bag-page{
     width: 80%;
+    height: auto;
     margin: auto;
     margin: 0rem 10%;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    padding-bottom: 4rem;
+    justify-content: space-between;
+    gap: 6%;
 }
-.add-to-cart-item{
-    width: 100%;
+.bag-items-container{
+    width: 57%;
     height: auto;
-    margin-top: 4rem;
+    padding-top: 2rem;
+ 
+}
+.bag-item-container{
+    display: flex;
+    background-color: blueviolet;
+       margin-bottom: 2rem;
+       padding: 2rem;
+    border:0.1px solid #000;
+}
+
+.item-left-part{
+    width: 20%;
+}
+.item-right-part{
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.bag-summery{
+    width: 37%;
+    height: auto;
+    background-color: aquamarine;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.bag-summery-btn button{
+width: 100%;
+padding: 1rem 0;
+font-size: 1.6rem;
+transition: all 0.5s ;
+}
+.bag-summery-btn button:hover{
+    background-color: var(--white);
 }

@@ -8,14 +8,13 @@ function onLoad(){
     displatItenOnPage();
     displayBagIconCount() ;
 }
-
+//add of number in bag
 function btnAddToBag(itemId){
     mainBag.push(itemId)
     localStorage.setItem("items",JSON.stringify(mainBag))
     displayBagIconCount()
-  
 }
-
+//show 
 function displayBagIconCount(){
     let bagItemCountElem = document.querySelector(".bag-item-count")
     if(mainBag.length > 0){
@@ -29,6 +28,10 @@ function displayBagIconCount(){
 
 function displatItenOnPage(){
     let itemsContainer = document.querySelector(".items-container");
+    if(!itemsContainer){
+        return
+    }
+
     let innerHtml = "";
     item.forEach(item => {
         innerHtml +=  `
@@ -62,10 +65,3 @@ function displatItenOnPage(){
     itemsContainer.innerHTML = innerHtml;
 }
 
-
-
-function displatItenOnPa(){
-    let itemsContainer = document.querySelector(".items-container");
-    let innerHtml = "";}
-
-        

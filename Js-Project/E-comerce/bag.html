@@ -1,32 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-comerce</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bag.css">
 </head>
+
 <body>
     <header>
-        <p>Pawan nagar</p>
-    <a href="bag.html" class="bag" >
-        <span>Bag</span>
-        <span class="bag-item-count">0</span>
-    </a>
-</header>
+        <p><a href="index.html">Pawan nagar</a></p>
+        <a href="bag.html" class="bag">
+            <span>Bag</span>
+            <span class="bag-item-count">0</span>
+        </a>
+    </header>
     <main>
-        <div class="add-to-bag-container">
-            <div class="add-to-cart-item">
-                <h1>pawan nagar</h1>
+        <div class="bag-page">
+            <div class="bag-items-container">
+                <div class="bag-item-container">
+                    <div class="item-left-part">
+                        <img src="img/1.jpg" alt="" class="bag-item-imag">
+                    </div>
+
+                    <div class="item-right-part">
+                        <div class="company">addidas</div>
+                        <div class="item-name">men printed polo color indian criket odi jersey</div>
+                        <div class="price-container">
+                            <span class="current-price">Rs 999</span>
+                            <span class="original-price">Rs 999</span>
+                            <span class="discount-price">(0% OFF)</span>
+                        </div>
+                        <div class="return-peried">
+                            <span class="return-peried-days">14 days</span>
+                            return avilable
+                        </div>
+                        <div class="delivery-details">Deliverd by
+                            <span class="delivery-details-days">10 oct 2023</span>
+                        </div>
+                    </div>
+                    <div class="remove-from-cart">X</div>
+                </div>
+                
+                
             </div>
-            
-            
+
+            <div class="bag-summery">
+                <div class="bag-details-container">
+                    <div class="price-header">price details (2 items)</div>
+                    <div class="price-item">
+                        <span class="price-item-tag">total mrp</span>
+                        <span class="price-item-value">Rs 1284</span>
+                    </div>
+                    <div class="discount-item">
+                        <span class="discount-item-tag">discount on mrp</span>
+                        <span class="discount-item-value">-RS 143</span>
+                    </div>
+                    <div class="conveniece-fee-item">
+                        <span class="conveniece-fee-item-tag">conveniece fee</span>
+                        <span class="conveniece-fee-item-value">-RS 99</span>
+                    </div>
+
+                    <div class="seprater"></div>
+
+                    <div class="total-amount-item">
+                        <span class="total-amount-item-tag">total amount</span>
+                        <span class="total-amount-item-value">RS 1240</span>
+                    </div>
+
+                    <div class="bag-summery-btn">
+                        <button>place order</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </main>
     <script src="items.js"></script>
+    <script src="style.js"></script>
     <script src="bag.js"></script>
 </body>
+
 </html>

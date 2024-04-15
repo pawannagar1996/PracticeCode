@@ -40,6 +40,7 @@ a{
 }
 img{
     width: 100%;
+    vertical-align: middle;
     height: auto;
 }
 
@@ -61,7 +62,6 @@ header{
     height: 1.8rem;
     width: 1.8rem;
     background-color: rgba(83, 87, 119,0.8);;
-    white-space: nowrap;
     text-align: center;
     position: relative;
     top: -2.8rem;
@@ -105,20 +105,16 @@ main{
     margin-top: 1.5rem;
     font-size: 1.6rem;
     font-weight: 700;
-    white-space: nowrap;
     text-transform: capitalize;
     color: var(--font-color-primary);
 }
 .item-name{
     font-size: 1.4rem;
     font-weight: 700;
-    white-space: nowrap;
     color: var(--font-color-secondary);
     text-transform: capitalize;
 }
-.pricing{
-    white-space: nowrap;
-    color: var(--font-color-primary);
+.pricing{color: var(--font-color-primary);
     margin-top: 1.5rem;
 }
 .pricing .current-price{
