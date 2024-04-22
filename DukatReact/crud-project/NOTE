@@ -1,0 +1,5 @@
+npm i json-server
+npm i react-router-dom
+
+npx json-server --watch db.json --port 3333
+npm i axios
