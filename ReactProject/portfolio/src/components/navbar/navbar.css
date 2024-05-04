@@ -1,0 +1,28 @@
+.header-wrapper{
+    padding: 0;
+}
+header{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem !important;
+}
+.n-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n-right ul{
+    display: flex;
+}
+.n-right ul li{
+    margin: 0rem 0.5rem;
+}
+.n-right ul li a{
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.nav-btn{
+    margin-left: 2rem;
+}

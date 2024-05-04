@@ -24,9 +24,7 @@ html{
 }
 
 .App{
-  padding: 0.5rem 3.5rem;
-  overflow: hidden;
-  color: var(--black);    
+  overflow: hidden;   
   font-size: 1.6rem;
   
 }
@@ -74,4 +72,23 @@ h6{
   font-size: 5.4rem;
 }
 
+
+
+.n-wrapper{
+  width: 100%;
+  padding: 10rem 4rem;
+}
+.layout{
+  width: 100%;
+  max-width: 118rem;
+  padding: 0rem 4rem;
+  
+    height: auto;
+    margin: auto;
+}
+.display-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 

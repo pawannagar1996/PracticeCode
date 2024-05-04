@@ -1,9 +1,11 @@
-
+import "./navbar.css"
 
 const Navbar = ()=>{
 
     return(
-        <div className="n-wrapper">
+        <div className="n-wrapper header-wrapper">
+
+            <header className="layout">
 
             <div className="n-left">
                 <div className="n-logo">pawan</div>
@@ -11,13 +13,15 @@ const Navbar = ()=>{
 
             <div className="n-right">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Works</a></li>
+                    <li><a>Contact Us</a></li>
                 </ul>
 
-                <button>logIn</button>
+                <button className="nav-btn">logIn</button>
             </div>
+
+            </header>
 
         </div>
     )
