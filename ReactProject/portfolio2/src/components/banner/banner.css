@@ -1,0 +1,44 @@
+.banner{
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(75deg, var(--PrimaryColor) 25%, var(--backgroundBlack) 25%);
+    padding: 5rem;
+    display: flex;
+    gap:5rem;
+}
+
+.left{
+    width: 35%;
+    height:100%;
+    background-image: url(../../img/IMG20230507143128.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3rem;
+}
+.right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding: 0rem 10%;
+}
+
+.right h1 span{
+    display: block;
+    text-align: end;
+}
+
+.right h1 span:nth-child(1){
+  color: var(--PrimaryColor);
+}
+.right h1 span:nth-child(2){
+  color:var(--white);
+}
+
+.right p{
+    text-align: end;
+    color:var(--white);
+}

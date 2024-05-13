@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--backgroundBlack); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 5px var(--fontBlack); 
+  border-radius: 10px;
+  background: var(--PrimaryColor); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--white); 
+}
+
+::selection {
+  background:var(--PrimaryColor);
+  color: var(--white);
+}
+ :root{
+
+  --PrimaryColor : #ffb400;
+  --backgroundBlack: #111111;
+  --fontBlack : #666666;
+  --white : #ffffff;
+  --backgroundMeniIcons : #2b2a2a;
+  --backgroundMeniIcons2 : #eeeeee;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0rem;
+ }
+
+ h1{
+font-size: 5.2rem;
+line-height: 7rem;
+ }
+
+ p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  margin-top: 1rem;
+ }
+
+ .wrapper{
+  width: 100%;
+  padding:0 4rem;
+  background-color: aqua;
+ }
+ .layout{
+  width:100%;
+  max-width: 124rem;
+  margin: auto;
+ }
+
+ button{
+  text-transform: uppercase;
+  color: var(--white);
+  border-radius:5rem;
+  border:0.1rem solid var(--PrimaryColor);
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+overflow: hidden;
+ }
+ button span:nth-child(1){
+  display: inline-block;
+  padding: 0rem 2rem 0rem 3rem;
+  z-index: 2;
+ }
+ button span:nth-child(2){
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--PrimaryColor);
+  border-radius: 50%;
+  display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+ }
+
+ button::after{
+    content: "";
+    background-color: var(--PrimaryColor);
+    position: absolute;
+    top: -5rem;
+    left: -6.3rem;
+    width: 4rem;
+    height: 17rem;
+z-index:1;
+opacity: 0.8;
+transform: rotate(35deg);
+transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+ button:hover::after{
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+
+
+
+
+ @media screen and (max-width: 1200px) {
+  h1{
+    font-size: 4.2rem;
+    line-height: 5.5rem;
+     }
+ }
