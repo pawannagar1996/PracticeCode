@@ -1,0 +1,15 @@
+.cover{
+  width: 100%;
+  max-width: 70rem;
+    padding: 5rem;
+    background-color: rgb(225, 134, 14);
+  }
+
+  .items{
+    background-color: bisque;
+    margin-top: 2rem;
+  }
+
+  .items:nth-child(1){
+    margin-top: 0rem;
+  }
