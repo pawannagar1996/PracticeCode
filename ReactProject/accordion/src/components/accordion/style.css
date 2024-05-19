@@ -13,3 +13,18 @@
   .items:nth-child(1){
     margin-top: 0rem;
   }
+
+  .answer{
+    transition: all 1s;
+    animation: answer 3s;
+  }
+  
+  @keyframes answer {
+    from {
+     height: 0px ;
+    }
+    to {
+      height: 100%;
+    }
+  }
+  

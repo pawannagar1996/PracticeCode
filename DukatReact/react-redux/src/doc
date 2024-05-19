@@ -1,0 +1,2 @@
+1. npm i redux  (state managment ke liye)
+2. npm i react-redux (ye comminication ka kaqam kkarti hai , react or redux ke bich mai)

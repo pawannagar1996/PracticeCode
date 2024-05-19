@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+
+    width: 100%;
+    max-width: 128rem;
+    height: auto;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.logo{
+    font-size: 3.5rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li{
+
+    list-style: none;
+}
+
+.bag{
+    font-size: 2rem;
+}

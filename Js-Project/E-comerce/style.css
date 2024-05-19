@@ -97,6 +97,7 @@ main{
 .rating{
     font-size: 1.2rem;
     font-weight: 700;
+    margin-top: 1rem;
 }
 .rating i{
    color: #b0ab4c;
@@ -138,7 +139,7 @@ main{
 .Btn-add-bag{
     font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 1rem;

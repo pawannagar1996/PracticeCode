@@ -45,7 +45,7 @@ function AddNew() {
         onChange={(e) => storeData(e)}
       />{" "}
       <br></br>
-      <input type="email" name="studentEmail" onChange={(e) => storeData(e)} />
+      <input type="email" name="studentEmail"  onChange={(e) => storeData(e)} />
       <br></br>
       <button onClick={(e) => onFormSubmit(e)}>Add New</button>
       </form>

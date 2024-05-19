@@ -7,7 +7,11 @@ function onLoad(){
     mainBag = mainBagStr ? JSON.parse(mainBagStr) : [];
     displatItenOnPage();
     displayBagIconCount() ;
+   
 }
+
+
+
 //add of number in bag
 function btnAddToBag(itemId){
     mainBag.push(itemId)

@@ -1,12 +1,10 @@
 import "./App.css"
-import MemoParent from "./funcComp/Memo.js/MemoParent";
-
-
+import Routing from "./funcComp/Routing/Routing";
 
 function App() {
 
   return (<>
-<MemoParent />
+<Routing />
 </>
   );
 }
