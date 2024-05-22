@@ -65,14 +65,13 @@ line-height: 7rem;
  p{
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  line-height: 3.5rem;
-  margin-top: 1rem;
+  line-height: 3.0rem;
  }
 
  .wrapper{
   width: 100%;
   padding:0 4rem;
-  background-color: aqua;
+  background-color: var(--backgroundBlack);
  }
  .layout{
   width:100%;
@@ -132,13 +131,32 @@ transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
  }
 
+.pTB100{
+  padding: 10rem 0rem;
+}
+ @media screen and (max-width: 721px) {
+  button{
+   
+
+    font-size: 1.6rem;
+   
+ 
+   }
+   button span:nth-child(1){
+   
+    padding: 0rem 2rem 0rem 3rem;
+
+   }
+   button span:nth-child(2){
+  
+    width: 5rem;
+    height: 5rem;
+   
+ 
+   }
+  
 
 
-
-
- @media screen and (max-width: 1200px) {
-  h1{
-    font-size: 4.2rem;
-    line-height: 5.5rem;
-     }
  }
+
+

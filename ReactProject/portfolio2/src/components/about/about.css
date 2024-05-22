@@ -1,0 +1,28 @@
+.about-title{
+    width: 100%;
+    height: auto;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.about-title h1{
+    color: var(--white);
+    
+}
+.about-title h1 span{
+    color: var(--PrimaryColor);
+    
+}
+.about-title .about-title-bg{
+    font-size: 110px;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    top:40%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    text-transform: uppercase;
+    font-weight: 800;
+    color: hsla(0, 0%, 100%, .07);
+}
