@@ -10,15 +10,15 @@ export const Banner = (props) => {
 
   return (
     <div className="banner">
-      <div className="left magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}></div>
+      <div className="left" ></div>
       <div className="right">
        
         <h1>
-        <span className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}>.I'M Pawan Nagar</span>
-        <span className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}>Web Devloper</span>
+        <span>.I'M Pawan Nagar</span>
+        <span>Web Devloper</span>
         </h1>
       
-        <p className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}>
+        <p >
           I'm a Tunisian based web designer & front‑end developer focused on
           crafting clean & user‑friendly experiences, I am passionate about
           building excellent software that improves the lives of those around me

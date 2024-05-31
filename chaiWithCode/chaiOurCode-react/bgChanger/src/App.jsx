@@ -8,14 +8,14 @@ function App() {
  
   return (
     <>
-    <div className='w-full h-screen'
+    <div className='w-full h-screen duration-500'
     style={{backgroundColor:color}}>
 
 
       <div className='fixed bottom-12 flex flex-wrap justify-center inset-x-0'>
         <div className="flex flex-wrap justify-center bg-white gap-3 shhadow-lg px-3 py-2 rounded-3xl text-white">
 
-          <button className="outline-none px-4 py-1 rounded-full shadow-lg" style={{backgroundColor:"red"}}
+          <button className="outline-none px-4 py-1 rounded-full shadow-lg " style={{backgroundColor:"red"}}
           onClick={(e)=> setColor(e.target.style.backgroundColor)}>
             Red</button>
 

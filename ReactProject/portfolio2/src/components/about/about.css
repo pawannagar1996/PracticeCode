@@ -1,28 +1,153 @@
-.about-title{
-    width: 100%;
-    height: auto;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+/* ===== about me ka left side ====== */
+
+.aboutMe .leftRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
 }
-.about-title h1{
+.aboutMe .leftRight .left{
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+}
+.aboutMe .leftRight .left .left-side-row{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMe .leftRight .left .left-side-row .left-side{
+    width: 50%;
+    padding:2rem 3rem;
+    text-align: end;
+    border: 1px solid rgba(255,180,0,0.3);
     color: var(--white);
-    
-}
-.about-title h1 span{
-    color: var(--PrimaryColor);
-    
-}
-.about-title .about-title-bg{
-    font-size: 110px;
-    letter-spacing: 10px;
-    line-height: .7;
-    position: absolute;
-    top:40%; 
-    left:50%; 
-    transform:translate(-50%, -50%); 
+    border-radius: 0.5rem;
     text-transform: uppercase;
-    font-weight: 800;
-    color: hsla(0, 0%, 100%, .07);
+}
+.aboutMe .leftRight .left .left-side-row .left-side h3{
+   font-size:5rem;
+   color: var(--PrimaryColor);
+   position: relative;
+   line-height: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row .left-side h3 sup{
+   font-weight: 400;
+}
+
+.aboutMe .leftRight .left .left-side-row .left-side p{
+   margin-top: 1.5rem;
+}
+.aboutMe .leftRight .left .left-side-row .left-side p span{
+   display: block;
+}
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(1){
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(2){
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(1){
+    margin-right: 1.5rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(2){
+    margin-left: 1.5rem;
+}
+
+/* ===== about me ka right side ====== */
+
+.aboutMe .leftRight .right{
+    width: 50%;
+    color: var(--white);
+}
+.aboutMe .leftRight .right h2{
+   color: var(--PrimaryColor);
+}
+.aboutMe .leftRight .right p{
+   margin-top: 1rem;
+}
+
+
+/* ===== skills ===== */
+
+.skills{
+    padding-bottom: 10rem;
+}
+
+
+.skills .leftRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+/* ===== skills me ka left side ====== */
+
+.skills .leftRight .left{
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+}
+.skills .leftRight .left .skills-container{
+    width: 100%;
+    display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 2rem;
+  flex-wrap:nowrap;
+}
+.skills .leftRight .left .skills-container .skills-items{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 1px solid rgba(255,180,0,0.3);
+color: var(--white);
+border-radius: 0.5rem;
+text-transform: uppercase;
+padding: 2rem;
+transition: all 0.5s ease;
+
+}
+
+.skills .leftRight .left .skills-container .skills-items img{
+width: 30%;
+vertical-align: middle;
+transition: all 0.5s ease;
+}
+.skills .leftRight .left .skills-container .skills-items h4{
+    transition: all 0.5s ease;
+margin-top: 2rem;
+}
+.skills .leftRight .left .skills-container .skills-items:hover{
+    transform: scale(1.1);
+border: 1px solid rgba(255,180,0,0.8);
+}
+.skills .leftRight .left .skills-container .skills-items:hover h4{
+color: var(--PrimaryColor);
+}
+.skills .leftRight .left .skills-container .skills-items:hover img{
+transform: rotateY(360deg);
+}
+
+/* ===== skills me ka right side ====== */
+.skills .leftRight .right{
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  background-color: blue;
 }
