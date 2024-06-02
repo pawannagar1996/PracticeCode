@@ -7,7 +7,7 @@ export const AnimatedCursorWindow = () => {
 //   const rootStyle = getComputedStyle(root)
 //   const PrimaryColor = rootStyle.getPropertyValue("--PrimaryColor");
 //  const last = PrimaryColor.slice(4,PrimaryColor.length-1)
-//   console.log(last)
+//   console.log(0)
     return (
         <>
         <AnimatedCursor 
