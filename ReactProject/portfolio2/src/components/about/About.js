@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import SkillData from "./SkillsData";
 export const About = (props) => {
-  props.one()
+
   return (
     <div className="wrapper">
       <div className="aboutMe layout pTB100">
@@ -12,7 +12,6 @@ export const About = (props) => {
           </h1>
           <span className="main-title-title-bg">Resume</span>
         </div>
-
         <div className="leftRight">
           <div className="left">
             <div className="left-side-row left-side-row-1">

@@ -20,7 +20,6 @@ export default function SkillData(){
         {skillData.map((item , index)=>{
 return(
     <div className="skills-items" key={index}>
-        {console.log("poora",item.img )}
     <img src={item.img} alt={item.alt}/>
     <h4>{item.skillName}</h4>
   </div>

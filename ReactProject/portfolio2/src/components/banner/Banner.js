@@ -6,7 +6,9 @@ import "./banner.css";
 
 export const Banner = (props) => {
 
-  props.one()
+// const root = document.querySelector(":root").style.setProperty("--PrimaryColor","rgb(255, 255, 255)")
+
+// console.log("root",root)
 
   return (
     <div className="banner">

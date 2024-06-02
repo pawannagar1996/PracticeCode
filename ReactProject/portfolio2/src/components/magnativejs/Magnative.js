@@ -15,7 +15,7 @@ export default function Magnative() {
     
                 let x = (e.clientX - react.left - react.width / 2) * 0.5
                 let y = (e.clientY - react.top - react.height / 2) * 0.5
-                console.log("in")
+                // console.log("in")
 
                 magnaticElement.style.transform = "translate("+x+"px,"+y+"px)";
                 magnaticElement.style.scale = "1.1";

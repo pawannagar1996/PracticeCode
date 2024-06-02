@@ -42,7 +42,7 @@ html{
 }
  :root{
 
-  --PrimaryColor : #ffb400;
+  --PrimaryColor : rgb(255, 180, 0);
   --backgroundBlack: #111111;
   --fontBlack : #666666;
   --white : #ffffff;
