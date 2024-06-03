@@ -50,10 +50,7 @@
 
 
 @media screen and (max-width: 1200px) {
-    h1{
-        font-size: 4.2rem;
-        line-height: 5.5rem;
-         }
+
          .banner .right{
         padding: 0rem 5%;
     }
