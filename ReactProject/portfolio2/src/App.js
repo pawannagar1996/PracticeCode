@@ -1,14 +1,17 @@
 import './App.css';
-import { About } from './components/about/About';
+import Projects from './components/projects/Projects';
+
 // import { AnimatedCursorWindow } from './components/animatedCursor/AnimatedCursor';
 // import Magnative from './components/magnativejs/Magnative';
 
 function App() {
   return (
     <div className="App">
-{/* <AnimatedCursorWindow /> */}
-{/* <Magnative /> */}
-<About />
+{/* <AnimatedCursorWindow />
+<Magnative /> */}
+
+<Projects />
+
     </div>
   );
 }

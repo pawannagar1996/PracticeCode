@@ -1,8 +1,9 @@
 import React from "react";
 import "./about.css";
 import SkillData from "./SkillsData";
-export const About = (props) => {
 
+export const About = (props) => {
+  
   return (
     <div className="wrapper">
       <div className="aboutMe layout pTB100">
