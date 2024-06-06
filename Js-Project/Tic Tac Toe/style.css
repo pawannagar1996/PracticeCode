@@ -35,16 +35,18 @@ h1{
 h2{
     font-size: 3rem;
     color: var(--fontColor);
+    margin-top: 1rem;
 }
 h3{
     font-size: 2rem;
     color: var(--fontColor);
+    margin-top: 1rem;
 }
 
 
 .container{
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +81,7 @@ h3{
     border-radius: 1rem;
     border: 0;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     cursor: pointer;
 transition: all 0.5s ease;
 }
@@ -124,7 +126,7 @@ margin-top: 2rem;
     border-radius: 1rem;
     border: 0;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     cursor: pointer;
 transition: all 0.5s ease;
 margin-top: 2rem;
@@ -133,6 +135,84 @@ margin-top: 2rem;
     color: var(--oBackgroundColor);
     background-color: var(--whiteColor);
 }
+
 .hide{
     display: none;
+}
+
+
+.tieCover-img{ position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(img/tie.gif);
+    background-size:35%;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.tieCover{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+.tieCover p{ font-size: 3rem;
+    font-weight: 700;
+color:#ca0c0c;
+margin-top: 2rem;
+}
+.tieCover img{
+    width: 20%;
+    height: auto;
+    opacity: 0.9;
+}
+.playAgain{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--whiteColor);
+    background-color: var(--oBackgroundColor);
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem 3rem;
+    cursor: pointer;
+transition: all 0.5s ease;
+margin-top: 2rem;
+}
+.playAgain:hover{
+    color: var(--oBackgroundColor);
+    background-color: var(--whiteColor);
+}
+
+@media only screen and (max-width: 520px) {
+    h1{
+        font-size: 5.2rem;
+    }
+
+}
+@media only screen and (max-width: 380px) {
+    h1{
+        font-size: 4.2rem;
+    }
+    h2{
+        font-size: 2.5rem;
+       
+    }
+    h3{
+        font-size: 1.8rem;
+      
+    }
+
+    .container {
+        min-height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+   
+    }
+
 }
