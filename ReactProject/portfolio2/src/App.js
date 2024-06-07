@@ -1,5 +1,7 @@
 import './App.css';
-import Projects from './components/projects/Projects';
+import AllProjects from './components/allProjects/AllProjects';
+
+
 
 // import { AnimatedCursorWindow } from './components/animatedCursor/AnimatedCursor';
 // import Magnative from './components/magnativejs/Magnative';
@@ -7,10 +9,12 @@ import Projects from './components/projects/Projects';
 function App() {
   return (
     <div className="App">
-{/* <AnimatedCursorWindow />
+{/* <AnimatedCursorWindow />  
 <Magnative /> */}
 
-<Projects />
+<AllProjects />
+
+
 
     </div>
   );

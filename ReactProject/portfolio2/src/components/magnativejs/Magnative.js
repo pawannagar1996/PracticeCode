@@ -1,5 +1,6 @@
 import { About } from "../about/About";
 import { Banner } from "../banner/Banner";
+import Projects from "../projects/Projects";
 
 
 
@@ -50,15 +51,9 @@ magnaticElement.style.transform = "translate(0px,0px)";
    <>
    <Banner one={magnaticEffect} two={magnaticOut}/>
    <About one={magnaticEffect} two={magnaticOut}/>
-   {/* <h1 onMouseEnter={()=>{magnaticEffect()}} onMouseOut={()=>{magnaticOut()}}>
-    
-    <span className="magnatic">p</span>
-    <span className="magnatic">a</span>
-    <span className="magnatic">w</span>
-    <span>a</span>
-    <span>n</span>
-   
-   </h1> */}
+
+   <Projects one={magnaticEffect} two={magnaticOut}/>
+ 
 
    </>
   )

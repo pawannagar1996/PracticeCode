@@ -1,0 +1,73 @@
+import work1 from "../../img/all-projects/1.jpg"
+
+export const AllProjectData = [
+    {
+        id : 1 ,
+        image : work1 ,
+        title : "web design" ,
+        category : "web"
+    },
+    {
+        id : 2 ,
+        image : work1 ,
+        title : "App Movil" ,
+        category : "app"
+    },
+    {
+        id : 3 ,
+        image : work1 ,
+        title : "Brand design" ,
+        category : "design"
+    },
+    {
+        id : 4 ,
+        image : work1 ,
+        title : "web design" ,
+        category : "web"
+    },
+    {
+        id : 5 ,
+        image : work1 ,
+        title : "App Movil" ,
+        category : "app"
+    },
+    {
+        id : 6 ,
+        image : work1 ,
+        title : "Brand design" ,
+        category : "design"
+    },
+    {
+        id : 7 ,
+        image : work1 ,
+        title : "web design" ,
+        category : "web"
+    },
+    {
+        id : 8 ,
+        image : work1 ,
+        title : "App Movil" ,
+        category : "app"
+    },
+    {
+        id : 9 ,
+        image : work1 ,
+        title : "Brand design" ,
+        category : "design"
+    }
+];
+
+export const ProjectNev = [
+    {
+        name : "all"
+    },
+    {
+        name : "web"
+    },
+    {
+        name : "app"
+    },
+    {
+        name : "design"
+    },
+];

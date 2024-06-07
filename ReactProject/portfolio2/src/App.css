@@ -164,15 +164,17 @@ transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   
 }
 .main-title .main-title-title-bg{
+  text-align: center;
+  width: 100%;
   font-size: 11rem;
   letter-spacing: 10px;
-  line-height: .7;
   position: absolute;
-  top:40%; 
+  top:50%; 
   left:50%; 
   transform:translate(-50%, -50%); 
   text-transform: uppercase;
   font-weight: 800;
+  line-height: 11rem;
   color: hsla(0, 0%, 100%, .07);
 }
 

@@ -1,0 +1,54 @@
+.work-filter{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.wort-item{
+    color: antiquewhite;
+    padding:0.25rem 0.75rem ;
+background-color: aquamarine;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.work-container{
+    display: grid;
+    grid-template-columns: repeat(3 , max-content);
+    gap:3rem;
+    justify-content: center;
+}
+
+.work-card{
+    background-color: aqua;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.work-img{ width: 29.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.work-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work button{
+    color: brown;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+/* 
+active */
+
+.active-work{
+    background-color: rgb(179, 114, 240);
+    color: rgb(240, 70, 70);
+}

@@ -10,7 +10,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 import React from "react";
 import "./projects.css";
 
-function Projects() {
+function Projects(props) {
   return (
     <div className="wrapper">
       <div className="projects layout pTB100">
@@ -18,7 +18,7 @@ function Projects() {
           <h1>
             my <span>projects</span>
           </h1>
-          <span className="main-title-title-bg">work</span>
+          <span className="main-title-title-bg">works</span>
         </div>
 
         <div className="project-slider">
@@ -68,8 +68,8 @@ function Projects() {
       </Swiper>
         </div>
 
-        <div className='projectBtn'>
-        <button>
+        <div className='projectBtn' >
+        <button className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}> 
               <span>All projects</span>
               <span>i</span>
             </button>
