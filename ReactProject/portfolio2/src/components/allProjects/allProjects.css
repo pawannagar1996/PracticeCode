@@ -3,39 +3,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 0.75rem;
-    margin-bottom: 2rem;
+    column-gap: 2rem;
+  
 }
 
-.wort-item{
+.work-item{
+    font-size: 1.6rem;
     color: antiquewhite;
-    padding:0.25rem 0.75rem ;
-background-color: aquamarine;
-    font-weight: 700;
+    padding:1rem 3rem ;
+    border: 1px solid var(--PrimaryColor);
+    font-weight: 500;
     border-radius: 0.5rem;
     text-transform: capitalize;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.work-item:hover{
+    color: antiquewhite;
+    background-color:var(--PrimaryColor);
 }
 .work-container{
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(3 , max-content);
-    gap:3rem;
+    grid-template-columns: repeat(3 ,1fr);
+    gap:5rem;
     justify-content: center;
 }
 
 .work-card{
-    background-color: aqua;
+    background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1.25rem;
+    padding:3rem;
     border-radius: 1rem;
+
 }
-.work-img{ width: 29.5rem;
+.work-img{ width: 100%;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    vertical-align: middle;
+    border: 1px solid black;
 }
+
+
+   
 .work-title{
     font-size: 2rem;
-    margin-bottom: 2rem;
 }
 
 .work button{
@@ -49,6 +61,6 @@ background-color: aquamarine;
 active */
 
 .active-work{
-    background-color: rgb(179, 114, 240);
-    color: rgb(240, 70, 70);
+    background-color:var(--PrimaryColor);
+    color: var(--fontBlack);
 }

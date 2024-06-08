@@ -1,6 +1,8 @@
-// Import Swiper React components
+
 import React from "react";
 import "./allProjects.css";
+// import MyPortfolio from "./MyPortfolio";
+
 import Works from "./Works";
 
 function AllProjects() {
@@ -14,7 +16,7 @@ function AllProjects() {
           </h1>
           <span className="main-title-title-bg">all works</span>
         </div>
-
+{/* <MyPortfolio /> */}
        <Works />
 
        

@@ -1,6 +1,7 @@
 import React from "react";
 import "./banner.css";
 
+import { FaArrowRight } from "react-icons/fa";
 
 
 
@@ -25,7 +26,9 @@ export const Banner = (props) => {
           crafting clean & user‑friendly experiences, I am passionate about
           building excellent software that improves the lives of those around me
         </p>
-        <button className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}><span>More About Me</span><span>i</span></button>
+        <button className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}><span>More About Me</span>
+        <span><FaArrowRight />
+        </span></button>
       </div>
     
     </div>

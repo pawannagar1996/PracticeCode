@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
   flex-direction: column;
+ 
 }
 .aboutMe .leftRight .left .left-side-row{
     width:100%;
@@ -67,6 +68,7 @@
 .aboutMe .leftRight .right{
     width: 50%;
     color: var(--white);
+    
 }
 .aboutMe .leftRight .right h2{
    color: var(--PrimaryColor);
@@ -103,9 +105,11 @@
 .skills .leftRight .left .skills-container{
     width: 100%;
     display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 2rem;
+  grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  row-gap: 2rem;
+  column-gap: 2rem;
   flex-wrap:nowrap;
+ 
 }
 .skills .leftRight .left .skills-container .skills-items{
 display: flex;
@@ -144,15 +148,33 @@ transform: rotateY(360deg);
 /* ===== skills me ka right side ====== */
 .skills .leftRight .right{
     width: 50%;
- 
+ height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
   flex-direction: column;
-  background-color: blue;
+ 
+  overflow: hidden;
 }
 
+.tagcloud{
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+}
 
+.tagcloud--item {
+    color: var(--white);
+    text-transform: uppercase;
+}
+.tagcloud--item:hover {
+    color: var(--PrimaryColor);
+}
 
 @media screen and (max-width: 992px) {
     .skills .leftRight .left .skills-container{
