@@ -8,6 +8,7 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +45,7 @@ html{
 
   --PrimaryColor : rgb(255, 180, 0);
   --backgroundBlack: #111111;
-  --fontBlack : #666666;
+  --fontBlack : #101010;
   --white : #ffffff;
   --backgroundMeniIcons : #2b2a2a;
   --backgroundMeniIcons2 : #eeeeee;
@@ -68,7 +69,7 @@ line-height: 5rem;
  }
 
  h4{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 line-height: 3rem;
  }
 
@@ -178,6 +179,45 @@ transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   font-weight: 800;
   line-height: 11rem;
   color: hsla(0, 0%, 100%, .07);
+}
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+ display: none;
+ opacity: 0;
+width: 9rem;
+ bottom: 130%;
+ left: 50%;
+ margin-left: -45px;
+  font-size: 1.6rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem;
+  
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+  transition: all 5s ease-in-out;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+display: inline-block;
+opacity: 0.8;
 }
 
  @media screen and (max-width: 721px) {

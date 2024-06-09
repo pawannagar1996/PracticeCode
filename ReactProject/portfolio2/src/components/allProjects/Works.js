@@ -28,7 +28,7 @@ const Works = () => {
   return (
     <>
       <div className="work-filter">
-        {ProjectNev.map((item, index) => {
+        {ProjectNev.map((item, index) => { 
           return (
             <span
               onClick={(e) => {
@@ -42,6 +42,7 @@ const Works = () => {
           );
         })}
       </div>
+      
       <div className="work-container">
         {projects.map((item, index) => {
           return <WorksItem item={item} key={item.id} />;

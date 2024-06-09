@@ -1,0 +1,148 @@
+.contact {
+    min-height: 100vh;
+  }
+  
+.contact .leftRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+
+/* contact ka left side section */
+
+.contact .leftRight .left{
+    width: 60%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+
+}
+.contact form{
+    width: 100%;
+    height: auto;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.contact form div{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+.contact form div input{
+    width: 50%;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    border:1px solid var(--backgroundBlack);
+    outline: none;
+    background-color: var(--backgroundMeniIcons);
+    text-align: end;
+    color:var(--white);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+.contact form div input::placeholder{
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.contact form div input:focus{
+    border:1px solid var(--PrimaryColor);
+}
+.contact form div textarea{
+    width: 100%;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    border:1px solid var(--backgroundBlack);
+    outline: none;
+    background-color: var( --backgroundMeniIcons);
+    min-height: 20rem;
+    text-align: end;
+    color:var(--white);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+.contact form div textarea::placeholder{
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+.contact form div textarea:focus{
+    border:1px solid var(--PrimaryColor);
+}
+.contact form div button{
+    margin-top: 1rem;
+
+}
+
+/* contact ka right side section */
+
+.contact .leftRight .right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--white);
+}
+
+.contact .leftRight .right .right-content{
+   text-align: end;
+   font-size: 1.6rem;
+   font-weight: 500;
+}
+.contact .leftRight .right .right-content h3{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.contact .leftRight .right .right-content p{
+margin-top: 1rem;
+}
+.contact .leftRight .right .right-content-icon{
+display: flex;
+}
+.contact .leftRight .right .right-content-icon .head{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    }
+.contact .leftRight .right .right-content-icon .para{
+    margin-top: 0.5rem;
+    }
+.contact .leftRight .right .right-content-icon .para a{
+    color: var(--white);
+    text-decoration: none;
+
+    }
+.contact .leftRight .right .right-content-icon .icon{
+margin-left: 2rem;
+}
+.contact .leftRight .right .social-icons{
+display: flex;
+gap: 2rem;
+color: var(--backgroundMeniIcons);
+font-size: 1.8rem;
+}
+.contact .leftRight .right .social-icons span{
+width: 4rem;
+height: 4rem;
+color: var(--white);
+border-radius:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--backgroundMeniIcons);
+transition: all 0.3s ease-in-out;
+}
+.contact .leftRight .right .social-icons span:hover{
+background-color: var(--PrimaryColor);
+}
+

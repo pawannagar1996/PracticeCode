@@ -1,4 +1,9 @@
 
+
+.aboutMe {
+    min-height: 100vh;
+  }
+  
 /* ===== about me ka left side ====== */
 
 .aboutMe .leftRight{

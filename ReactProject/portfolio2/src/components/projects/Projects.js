@@ -44,50 +44,45 @@ function Projects(props) {
           >
             <SwiperSlide>
               <img src={work1} />
-             
               <div className="SwiperSlideContent">
-                <div className="up">
                 <h3>react</h3>
-                </div>
-                
-
-                <div className="SwiperSlideContentIcon">
-                  <span>
-                    <a href="#">
-                      Preview <MdPreview />
-                    </a>
-                  </span>
-
-                  <span>
-                    <FaGithub />
-                  </span>
-                </div>
+               <span> <a href="#" className=" tooltip"><MdPreview /><span class="tooltiptext">Preview</span></a>
+               <a href="#"  className=" tooltip"><FaGithub /><span class="tooltiptext">Github</span></a></span>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide> */}
+            <SwiperSlide>
+              <img src={work1} />
+              <div className="SwiperSlideContent">
+                <h3>react</h3>
+               <span> <a href="#" className=" tooltip"><MdPreview /><span class="tooltiptext">Preview</span></a>
+               <a href="#"  className=" tooltip"><FaGithub /><span class="tooltiptext">Github</span></a></span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={work1} />
+              <div className="SwiperSlideContent">
+                <h3>react</h3>
+               <span> <a href="#" className=" tooltip"><MdPreview /><span class="tooltiptext">Preview</span></a> 
+               <a href="#" className=" tooltip" ><FaGithub /><span class="tooltiptext">Github</span></a></span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={work1} />
+              <div className="SwiperSlideContent">
+                <h3>react</h3>
+               <span> <a href="#" className=" tooltip"><MdPreview /><span class="tooltiptext">Preview</span></a> 
+               <a href="#" className=" tooltip" ><FaGithub /><span class="tooltiptext">Github</span></a></span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={work1} />
+              <div className="SwiperSlideContent">
+                <h3>react</h3>
+               <span> <a href="#" className=" tooltip"><MdPreview /><span class="tooltiptext">Preview</span></a> 
+               <a href="#" className=" tooltip" ><FaGithub /><span class="tooltiptext">Github</span></a></span>
+              </div>
+            </SwiperSlide>
+        
           </Swiper>
         </div>
 
