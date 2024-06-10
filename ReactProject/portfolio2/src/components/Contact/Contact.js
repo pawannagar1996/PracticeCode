@@ -1,3 +1,12 @@
+import { BsSendFill } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaMap } from "react-icons/fa";
+import { IoIosMailOpen } from "react-icons/io";
+import { ImMobile } from "react-icons/im";
+
 import "./contact.css"
 
 function Contact() {
@@ -32,7 +41,7 @@ function Contact() {
 
 <div className="projectBtn">
           <button><span>send message</span> 
-          <span>i</span>
+          <span><BsSendFill /></span>
           </button>
         </div>
 
@@ -56,7 +65,8 @@ function Contact() {
                     India</a></p></div>
                 </div>
 
-               <div className="icon">Icon</div>
+               <div className="icon"><FaMap />
+               </div>
             </div>
 
             <div className="right-content right-content-icon">
@@ -64,7 +74,7 @@ function Contact() {
                 <div className="head">Mail Me</div><div><p className="para"><a href="#">pawannagar1996@gmail.com</a></p></div>
                 </div>
 
-               <div className="icon">Icon</div>
+               <div className="icon"><IoIosMailOpen /></div>
             </div>
 
             <div className="right-content right-content-icon">
@@ -72,14 +82,14 @@ function Contact() {
                 <div className="head">call me</div><div><p className="para"><a href="#">+91 705 356 0066</a></p></div>
                 </div>
 
-               <div className="icon">Icon</div>
+               <div className="icon"><ImMobile /></div>
             </div>
 
             <div className="right-content social-icons"> 
-                <span>i</span>
-                <span>i</span>
-                <span>i</span>
-                <span>i</span>
+                <span><a href="#"><RiInstagramFill /></a></span>
+                <span><a href="#"><FaFacebook /></a></span>
+                <span><a href="#"><FaLinkedin /></a></span>
+                <span><a href="#"><FaGithub /></a></span>
             </div>
 
           </div>

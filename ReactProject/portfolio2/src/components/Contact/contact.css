@@ -13,7 +13,7 @@
 /* contact ka left side section */
 
 .contact .leftRight .left{
-    width: 60%;
+    width: 65%;
  
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@ gap: 2rem;
 /* contact ka right side section */
 
 .contact .leftRight .right{
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -110,11 +110,13 @@ margin-top: 1rem;
 display: flex;
 }
 .contact .leftRight .right .right-content-icon .head{
+    width:100%;
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 700;
     }
 .contact .leftRight .right .right-content-icon .para{
+    width:100%;
     margin-top: 0.5rem;
     }
 .contact .leftRight .right .right-content-icon .para a{
@@ -129,9 +131,8 @@ margin-left: 2rem;
 display: flex;
 gap: 2rem;
 color: var(--backgroundMeniIcons);
-font-size: 1.8rem;
 }
-.contact .leftRight .right .social-icons span{
+.contact .leftRight .right .social-icons span a{
 width: 4rem;
 height: 4rem;
 color: var(--white);
@@ -140,9 +141,99 @@ display: flex;
 align-items: center;
 justify-content: center;
 background-color: var(--backgroundMeniIcons);
+text-decoration: none;
 transition: all 0.3s ease-in-out;
 }
-.contact .leftRight .right .social-icons span:hover{
+.contact .leftRight .right .social-icons span a:hover{
 background-color: var(--PrimaryColor);
 }
+.contact .leftRight .right .social-icons span svg{
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in-out;
+}
+.contact .leftRight .right .social-icons span:hover svg{
+transform: scale(1.2);
+}
 
+.contact .leftRight .right .right-content-icon .icon{
+font-size: 3rem;
+color: var(--PrimaryColor);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .contact .leftRight .left{
+        width: 60%;
+    }
+
+    .contact .leftRight .right{
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 990px) {
+    .contact .leftRight{
+        gap: 5rem;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .contact .leftRight{
+        flex-direction: column;  
+        margin-top: 5rem;  
+    }
+/* contact ka left side section */
+    .contact .leftRight .left{
+        width: 100%;
+    }
+
+    .contact form div{
+        justify-content: start;
+    }
+
+    .contact form div input{
+      
+        text-align:start;
+       
+    }
+    .contact form div textarea{
+      
+        text-align: start;
+        
+    }
+
+    /* contact ka right side section */
+
+.contact .leftRight .right{
+    width: 100%;
+    align-items: start;
+}
+.contact .leftRight .right .right-content{
+    text-align: start;
+ }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .contact .leftRight{
+        gap:4rem;
+        margin-top: 4rem;  
+    }
+    .contact form div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact form div input{
+        width: 100%;
+    }
+    .contact .leftRight .right .right-content-icon{
+        justify-content: center;
+        flex-direction: row-reverse;
+        }
+        .contact .leftRight .right .right-content-icon .icon{
+            margin-left: 0rem;
+            margin-right: 2rem;
+            }
+}
