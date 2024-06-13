@@ -1,7 +1,7 @@
-import { About } from "../about/About";
-import AllProjects from "../allProjects/AllProjects";
-import { Banner } from "../banner/Banner";
-import Projects from "../projects/Projects";
+// import { About } from "../about/About";
+// import AllProjects from "../allProjects/AllProjects";
+// import { Banner } from "../banner/Banner";
+// import Projects from "../projects/Projects";
 
 
 
@@ -50,13 +50,13 @@ magnaticElement.style.transform = "translate(0px,0px)";
 
   return (
    <>
-   <Banner one={magnaticEffect} two={magnaticOut}/>
+   {/* <Banner one={magnaticEffect} two={magnaticOut}/>
    <About one={magnaticEffect} two={magnaticOut}/>
 
    <Projects one={magnaticEffect} two={magnaticOut}/>
 
    <AllProjects />
- 
+  */}
 
    </>
   )

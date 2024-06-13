@@ -7,9 +7,32 @@ import { FaMap } from "react-icons/fa";
 import { IoIosMailOpen } from "react-icons/io";
 import { ImMobile } from "react-icons/im";
 
+import emailjs from '@emailjs/browser';
+
 import "./contact.css"
+import { useRef } from "react";
 
 function Contact() {
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_k56teah', 'template_ne0fzz8', form.current, {
+        publicKey: 'piDBPtKjgoXsxBAml',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <>
       <div className="wrapper">
@@ -25,7 +48,7 @@ function Contact() {
 
           <div className="left">
 
-          <form action="" method="get" id="form1">
+          <form action="" method="post" id="form1" ref={form} onSubmit={sendEmail}>
 <div>
     <input type="text" id="fName" name="fName" placeholder="full name" required/>
     <input type="email" id="e-mail" name="e-mail" placeholder="e-mail" required/>
@@ -35,12 +58,12 @@ function Contact() {
     <input type="text" id="subject" name="subject" placeholder="subject" required/>
     </div>
 <div>
-    <textarea placeholder="your message"></textarea>
+    <textarea name="message" placeholder="your message"></textarea>
     </div>
 <div>
 
 <div className="projectBtn">
-          <button><span>send message</span> 
+          <button type="submit"><span>send message</span> 
           <span><BsSendFill /></span>
           </button>
         </div>
