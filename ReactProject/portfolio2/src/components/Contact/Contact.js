@@ -8,13 +8,34 @@ import { IoIosMailOpen } from "react-icons/io";
 import { ImMobile } from "react-icons/im";
 
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 import "./contact.css"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function Contact() {
 
   const form = useRef()
+  const fName = useRef()
+  const eMail = useRef()
+  const mobile = useRef()
+  const subject = useRef()
+  const message = useRef()
+  const buttonRef = useRef()
+  let [disabled , setDisabled]= useState(true)
+
+  
+  function buttonDisabled(e){
+   if(e.target.value.length>0){
+    console.log("pawan")
+
+    setDisabled(false)
+   }
+  
+  // console.log(e.target.value)
+  }
+
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,12 +47,25 @@ function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
+            toast('Send Message Successfully!');
+            setDisabled(true)
+
         },
         (error) => {
           console.log('FAILED...', error.text);
+
         },
       );
+      clearFormInput()
   };
+
+  function clearFormInput(){
+fName.current.value = "";
+eMail.current.value = "";
+mobile.current.value = "";
+subject.current.value = "";
+message.current.value = "";
+  }
 
   return (
     <>
@@ -50,22 +84,40 @@ function Contact() {
 
           <form action="" method="post" id="form1" ref={form} onSubmit={sendEmail}>
 <div>
-    <input type="text" id="fName" name="fName" placeholder="full name" required/>
-    <input type="email" id="e-mail" name="e-mail" placeholder="e-mail" required/>
+    <input type="text" id="fName" name="fName" ref={fName} placeholder="full name" onChange={(e)=>buttonDisabled(e)} required/>
+    <input type="email" id="e-mail" name="e-mail" ref={eMail} placeholder="e-mail" required/>
     </div>
 <div>
-    <input type="tel" id="mobile" name="mobile" placeholder="mobile number" required/>
-    <input type="text" id="subject" name="subject" placeholder="subject" required/>
+    <input type="tel" id="mobile" name="mobile" ref={mobile} placeholder="mobile number" required/>
+    <input type="text" id="subject" name="subject" ref={subject} placeholder="subject" required/>
     </div>
 <div>
-    <textarea name="message" placeholder="your message"></textarea>
+    <textarea name="message" ref={message} placeholder="your message"></textarea>
     </div>
 <div>
 
 <div className="projectBtn">
-          <button type="submit"><span>send message</span> 
+          <button type="submit" onClick={sendEmail} ref={buttonRef}
+          disabled = {disabled}
+          ><span>send message</span> 
           <span><BsSendFill /></span>
           </button>
+          <Toaster
+         position="top-center"
+         reverseOrder={false}
+         gutter={8}
+         containerClassName=""
+         containerStyle={{}}
+         toastOptions={{
+           // Define default options
+           className: '',
+           duration: 5000,
+           style: {
+             background: '#363636',
+             color: '#fff',
+             fontSize:"1.6rem",
+             textAlign:"center",
+             width:"auto"}}}/>
         </div>
 
     </div>
