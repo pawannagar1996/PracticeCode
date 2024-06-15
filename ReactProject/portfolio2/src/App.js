@@ -1,5 +1,8 @@
+
 import './App.css';
-import Contact from './components/Contact/Contact';
+// import Header from './components/header/Header';
+// import Contact from './components/Contact/Contact';
+
 
 
 
@@ -8,13 +11,18 @@ import Contact from './components/Contact/Contact';
 import Magnative from './components/magnativejs/Magnative';
 
 function App() {
+
+
   return (
     <div className="App">
 {/* <AnimatedCursorWindow />   */}
 <Magnative />
 
 
-<Contact />
+
+{/* <Contact /> */}
+
+
 
 
 

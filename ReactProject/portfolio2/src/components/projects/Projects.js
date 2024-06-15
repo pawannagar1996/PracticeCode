@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa";
 import work1 from "../../img/all-projects/1.jpg";
 import React from "react";
 import "./projects.css";
+import { Link } from "react-router-dom";
 
 function Projects(props) {
   return (
@@ -87,7 +88,7 @@ function Projects(props) {
         </div>
 
         <div className="projectBtn">
-          <button
+         <Link to="/allprojects"> <button
             className="magnatic"
             onMouseEnter={() => {
               props.one();
@@ -101,6 +102,7 @@ function Projects(props) {
               <GiArmoredBoomerang />
             </span>
           </button>
+          </Link>
         </div>
       </div>
     </div>

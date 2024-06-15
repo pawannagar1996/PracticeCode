@@ -13,7 +13,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import "./contact.css"
 import { useRef, useState } from "react";
 
-function Contact() {
+function Contact(props) {
 
   const form = useRef()
   const fName = useRef()
@@ -31,10 +31,15 @@ function Contact() {
 
     setDisabled(false)
    }
+   else{
+    console.log("nagar")
+    setDisabled(true)
+   
+   }
   
   // console.log(e.target.value)
   }
-
+  console.log(disabled)
 
 
   const sendEmail = (e) => {
@@ -99,7 +104,10 @@ message.current.value = "";
 <div className="projectBtn">
           <button type="submit" onClick={sendEmail} ref={buttonRef}
           disabled = {disabled}
-          ><span>send message</span> 
+          className="magnatic"
+          onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}
+          >
+            <span>send message</span> 
           <span><BsSendFill /></span>
           </button>
           <Toaster

@@ -1,7 +1,10 @@
-// import { About } from "../about/About";
-// import AllProjects from "../allProjects/AllProjects";
-// import { Banner } from "../banner/Banner";
-// import Projects from "../projects/Projects";
+import { createBrowserRouter ,RouterProvider } from "react-router-dom";
+import { About } from "../about/About";
+import AllProjects from "../allProjects/AllProjects";
+import { Banner } from "../banner/Banner";
+import Projects from "../projects/Projects";
+import Header from "../header/Header";
+import Contact from "../Contact/Contact";
 
 
 
@@ -48,6 +51,30 @@ magnaticElement.style.transform = "translate(0px,0px)";
     }
    
 
+    const router = createBrowserRouter([
+        {
+          path:"/",
+        element :<><Header /> <Banner one={magnaticEffect} two={magnaticOut}/></> 
+        },
+        {
+            path:"/about",
+        element :<>  <Header /> <About one={magnaticEffect} two={magnaticOut}/></> 
+        },
+        {
+            path:"/projects",
+        element :<>  <Header /> <Projects one={magnaticEffect} two={magnaticOut}/></> 
+        },
+        {
+            path:"/allprojects",
+        element :<>  <Header /> <AllProjects/></> 
+        },
+        {
+            path:"/contact",
+        element :<>  <Header /> <Contact one={magnaticEffect} two={magnaticOut}/></> 
+        },
+    ])
+    
+
   return (
    <>
    {/* <Banner one={magnaticEffect} two={magnaticOut}/>
@@ -55,8 +82,10 @@ magnaticElement.style.transform = "translate(0px,0px)";
 
    <Projects one={magnaticEffect} two={magnaticOut}/>
 
-   <AllProjects />
-  */}
+   <AllProjects /> */}
+ 
+
+ <RouterProvider router = {router} />
 
    </>
   )
