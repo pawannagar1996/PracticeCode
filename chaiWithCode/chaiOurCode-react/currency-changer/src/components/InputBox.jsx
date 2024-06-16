@@ -2,7 +2,6 @@ import React, {useId} from 'react'
 
 function InputBox({
     label,
-    to,
     amount,
     onAmountChange,
     onCurrencyChange,
