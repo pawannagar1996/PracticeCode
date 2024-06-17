@@ -138,10 +138,12 @@ message.current.value = "";
 
             <div className="right-content">
                 <h3>DON'T BE SHY !</h3>
-                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects.
+                  {/* , creative ideas or opportunities to be part of your visions. */}
+                  </p>
             </div>
             
-            <div className="right-content right-content-icon">
+            {/* <div className="right-content right-content-icon">
                <div>
                 <div className="head">Address</div><div><p className="para"><a href="#">C = 304 J. J. Coloney Tigri ,<br/>
                     New Delhi 110080 ,
@@ -150,7 +152,7 @@ message.current.value = "";
 
                <div className="icon"><FaMap />
                </div>
-            </div>
+            </div> */}
 
             <div className="right-content right-content-icon">
                <div>

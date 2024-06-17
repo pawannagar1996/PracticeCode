@@ -90,7 +90,7 @@ gap: 2rem;
     justify-content: center;
     align-items: end;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   color: var(--white);
 }
 
@@ -126,6 +126,7 @@ display: flex;
     }
 .contact .leftRight .right .right-content-icon .icon{
 margin-left: 2rem;
+
 }
 .contact .leftRight .right .social-icons{
 display: flex;
@@ -156,7 +157,7 @@ transform: scale(1.2);
 }
 
 .contact .leftRight .right .right-content-icon .icon{
-font-size: 3rem;
+font-size: 2rem;
 color: var(--PrimaryColor);
 }
 
