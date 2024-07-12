@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 function TodoComponent() {
   const [todos, updateTodos] = useState([
-    { id: "" + Date.now(), text: "default", status: "active" },
+    { id: "" + Date.now(), text: "default", status: "active",editing :true},
   ]);
 
   const [addButtonDisable, updateAddButtonDisable] = useState(true)
@@ -48,12 +48,14 @@ function TodoComponent() {
       id: "" + Date.now(),
       text: textRef.current.value,
       status: "active",
+      editing:false
     };
     const newTodos = [...todos];
     newTodos.push(item);
     updateTodos(newTodos);
     textRef.current.value = "";
     updateAddButtonDisable(true)
+
     // console.log(todos)
   }
 
@@ -62,24 +64,37 @@ function TodoComponent() {
       <>
         <ul>
           {todos.map((item) => {
-            const { id, text, status } = item;
+            const { id, text, status ,editing } = item;
             return (
+
               <li
                 key={id}
                 id={"li--" + id}
                 className={getTodoStatusClass(status)}
               >
-                <p>{text}</p>
+                   {editing ? (<input defaultValue={text}  id={'input-todo--'+id} />) :(<span>{text}</span>)}
+              
                 <div>
+                {editing ? null : 
+                 ( <button
+                  id={'btn-done--'+id}
+                  onClick={handleMarkDone} 
+                  disabled={status === 'done'}>
+                   {status}
+                </button>)}
+                {/* {editing !== true  && (
                   <button
-                    onClick={handleMarkDone}
-                    id={"btn-done--" + id}
-                    disabled={status === "done"}
-                  >
-                    {status}
+                    id={'btn-done--'+id}
+                    onClick={handleMarkDone} 
+                    disabled={status === 'done'}>
+                     {status}
                   </button>
-                  <button id={"btn-edit--" + id} disabled={status === "done"}>
-                    Edit
+                )} */}
+                  <button id={"btn-edit--" + id}
+                  onClick={handleEdit}
+                   disabled={status === "done"}>
+                    {editing ? "edit done" : "edit"}
+                    
                   </button>
                   <button id={"btn-delete--" + id}>Delete</button>
                 </div>
@@ -120,6 +135,29 @@ if(inputText.length > 0){
 else{  updateAddButtonDisable(true) 
   console.log("no")
 }
+  }
+
+  function handleEdit(event){
+    let id = event.target.id;
+    id = id.split("--")[1];
+    const index = todos.findIndex((todo) => todo.id === id);
+    const todo = {...todos[index]};
+  
+
+    // console.log('todo.editing ', todo.editing);
+
+    if(todo.editing) { 
+      const inputTodoEle = document.getElementById('input-todo--'+id)
+      console.log('inputTodoEle ', inputTodoEle);
+      console.log('inputTodoEle value', inputTodoEle.value);
+      todo.text = inputTodoEle.value;
+    }
+
+    todo.editing = !todo.editing;
+
+    const newTodos = [...todos];
+    newTodos[index] = todo;
+    updateTodos(newTodos);
   }
 
   return <>{renderTodoAdderForm()}</>;
