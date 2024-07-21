@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+width: 100%;
+max-width: 600px;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(221, 255, 0);
+}
+.todo-add{
+  margin-top: 50px;
+}
+ul{
+  width: 100%;
+}
+li{
+  background-color: aqua;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+
+p{
+  width: 60%;
+}
+
+button{
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+
+
