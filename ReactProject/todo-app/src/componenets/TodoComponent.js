@@ -1,9 +1,23 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function TodoComponent() {
-  const [todos, updateTodos] = useState([]);
 
+  function getDataLs(){
+const getDataLs = localStorage.getItem("todosData")
+if(getDataLs){
+  return JSON.parse(getDataLs)
+}
+else{
+  return []
+}
+  }
+
+  const [todos, updateTodos] = useState(getDataLs());
   const [addButtonDisable, updateAddButtonDisable] = useState(true);
+
+  useEffect(()=>{
+localStorage.setItem("todosData",JSON.stringify(todos))
+  },[todos])
 
   const textRef = useRef();
 
