@@ -1,22 +1,16 @@
-import React from 'react'
+
 import TodoItems from './TodoItems'
 
-function TodoList() {
+function TodoList(props) {
 
-    const todoListArray = [
-        "todo item one",
-        "todo item Two",
-        "todo item Three"
-    ]
+  const {list} = props
 
   return (
     <>
     <ul className='todo-list'>
-
-{
-    todoListArray.map((item)=>{
-
-        return    <TodoItems text={item} />
+{list.map((item)=>{
+        const {id , text , status} =item
+        return    <TodoItems id={id} text={text} status={status} />
     })
 }
 

@@ -21,7 +21,6 @@ ul{
   width: 100%;
 }
 li{
-  background-color: aqua;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -37,4 +36,10 @@ button{
   padding: 10px 15px;
 }
 
+.active{
+  background-color: yellow;
+}
+.done{
+  background-color: rgb(247, 60, 60);
+}
 
